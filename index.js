@@ -14,5 +14,11 @@ app.get('/', function(request, response){
     };
     response.render('home', contexto);
 });
+
+app.post('/login', function(request, response){
+console.log('hola'+ request);
+response.send('hola');
+});
+
 console.log("Servidor iniciado...");
-app.listen(3000);
+app.listen(4000);
